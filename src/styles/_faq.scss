@@ -20,7 +20,7 @@
                 position: relative;
 
                 &::after {
-                    content: '+';
+                    content: '+'; /* Adicionado para mostrar o sinal de "+" inicialmente */
                     position: absolute;
                     top: 0;
                     right: 24px;
@@ -32,18 +32,22 @@
             }
 
             &__answer {
-                height: 0;
-                overflow: hidden;
+                height: 0; /* A altura inicialmente definida como 0 para esconder a resposta */
+                overflow: hidden; /* Escondendo o conteúdo que ultrapassa a altura */
+                padding-top: 0; /* Adicionado para ajustar o espaçamento interno */
+                padding-bottom: 0; /* Adicionado para ajustar o espaçamento interno */
+                transition: height 0.3s ease; /* Adiciona uma transição suave para a altura */
             }
 
-            &--is--open {
+            &--is-open {
                 .faq__questions__item__question::after {
-                    content: '-';
+                    content: '-'; /* Alterado para mostrar o sinal de "-" quando aberto */
                 }
 
                 .faq__questions__item__answer {
-                    height: auto;
-                    padding: 24px;
+                    height: auto; /* Alterado para altura automática ao abrir */
+                    padding-top: 24px; /* Adicionado para ajustar o espaçamento interno */
+                    padding-bottom: 24px; /* Adicionado para ajustar o espaçamento interno */
                 }
             }
         }
