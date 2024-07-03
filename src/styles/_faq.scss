@@ -18,6 +18,7 @@
                 display: block;
                 cursor: pointer;
                 position: relative;
+                margin-bottom: 16px;
 
                 &::after {
                     content: '+'; /* Adicionado para mostrar o sinal de "+" inicialmente */
@@ -37,6 +38,8 @@
                 padding-top: 0; /* Adicionado para ajustar o espaçamento interno */
                 padding-bottom: 0; /* Adicionado para ajustar o espaçamento interno */
                 transition: height 0.3s ease; /* Adiciona uma transição suave para a altura */
+                padding: 0 24px;
+                transition: height, .5s ease;
             }
 
             &--is-open {
@@ -46,8 +49,8 @@
 
                 .faq__questions__item__answer {
                     height: auto; /* Alterado para altura automática ao abrir */
-                    padding-top: 24px; /* Adicionado para ajustar o espaçamento interno */
                     padding-bottom: 24px; /* Adicionado para ajustar o espaçamento interno */
+                    transition: height, .5s ease;
                 }
             }
         }
