@@ -119,6 +119,7 @@ body {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     
+    
     img {
         max-width: 100%;
     }
@@ -148,18 +149,8 @@ body {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            color: red;
+            
         }
-    }
-
-    .image-text-section--image-full-width{
-        position: relative;
-        z-index: -10000;
-    }
-
-    header {
-        position: relative; 
-        z-index: 10000; 
     }
     
 }

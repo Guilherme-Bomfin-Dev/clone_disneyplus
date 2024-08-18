@@ -6,7 +6,7 @@
     left: 0;
     background-color: variaveis.$corDeFundo;
     transition: background-color .5s ease;
-    z-index: 100000;
+    z-index: 1;
 
     &--is-hidden {
         opacity: 0;
